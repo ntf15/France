@@ -7,15 +7,15 @@
 
 body {
     background: #080808;
-    color:fff;
+    color: #fff; 
 }
 
 #header {
     width: 100%;
     height: 100vh;
-    background-image: url(images/Creamy\ line\ art\ floral\ personal\ LinkedIn\ banner\ \(3\).png);
+    background-image: url("photos/background.png"); 
     background-size: cover;
-    background-position: center;
+    background-position: top;
 }
 
 .container {
@@ -39,8 +39,34 @@ nav ul li {
     margin: 10px 20px;
 }
 
-nav ul li a{
+nav ul li a {
     color: #fff;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e0a795;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: width 0.5s; 
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 100px;
+    margin-top: 20px;
+}
+.header-text h1 span{
+    color:#e0a795
 }
