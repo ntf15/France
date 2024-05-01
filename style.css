@@ -107,9 +107,9 @@ nav ul li a:hover::after {
     cursor: pointer;
     position:relative;
 }
-.tab-links ::after{
+.tab-links::after{
     content:'';
-    width:0;
+    width:100;
     height: 3px;
     background: #e0a795;
     position: absolute;
@@ -127,4 +127,10 @@ nav ul li a:hover::after {
 .tab-contents ul li span{
     color:#e0a795;
     font-size: 14px;
+}
+.tab-contents{
+    display:none;
+}
+.tab-contents.active-tab{
+    display: block;
 }
