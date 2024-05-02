@@ -233,8 +233,13 @@ nav ul li a:hover::after {
     margin-right: 15px;
     color: #ababab;
     display: inline-block;
+    transition: transform 0.5s;
 }
 .social-icons a:hover{
     color:#f7d5d7;
     transform: translateY(-5px);
+}
+.btn.btn2{
+    display:inline-block;
+    background: #f7d5d7;
 }
