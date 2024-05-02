@@ -50,7 +50,7 @@ nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
-    background: #e0a795;
+    background: #fff;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -68,7 +68,7 @@ nav ul li a:hover::after {
     margin-top: 20px;
 }
 .header-text h1 span{
-    color:#e0a795
+    color:#f7d5d7
 }
 /*-----------about----------*/
 #about{
@@ -111,7 +111,7 @@ nav ul li a:hover::after {
     content:'';
     width:100;
     height: 3px;
-    background: #e0a795;
+    background: #f7d5d7;
     position: absolute;
     left:0;
     bottom:-8px;
@@ -125,7 +125,7 @@ nav ul li a:hover::after {
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color:#e0a795;
+    color:#f7d5d7;
     font-size: 14px;
 }
 .tab-contents{
@@ -143,4 +143,14 @@ nav ul li a:hover::after {
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
+}
+.work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.work img{
+    width:100%;
+    border-radius:10px;
+    display:block;
 }
