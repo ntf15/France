@@ -62,7 +62,41 @@
         </div>
     </div>
 </div>
+<!---------Portfolio-------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Portfolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Brown Vintage Illustrative Motorcycle Club Road Trip Event Flyer (1).png" alt="">
+            </div>
+            <div class="work">
+                <img src="images/Simple Red Cycling Event Flyer (5).png" alt="">
+            </div>
+            <div class="work">
+                <img src="images/Dark Blue and Purple Minimalist Game Night Flyer (1).png" alt="">
+            </div>
+        </div>
+    </div>
+</div>
 
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
 </body>
 </html>
 
