@@ -274,7 +274,7 @@ form btn2{
     margin-top: 20px;
 }
 /*--------css for small screens------*/
-nav .fas{
+nav .fa-regular{
     display: none;
 }
 
@@ -286,7 +286,7 @@ nav .fas{
     .header-text h1{
         font-size: 30px;
     }
-    nav .fas{
+    nav .fa-regular{
         display: block;
         font-size: 25px;
     }
@@ -305,7 +305,7 @@ nav .fas{
         display: block;
         margin: 25 px;
     }
-    nav ul .fas{
+    nav ul .fa-regular{
         position: absolute; 
         top: 25px;
         left: 25px;
