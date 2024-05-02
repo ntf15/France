@@ -41,6 +41,7 @@
 
                     Driven by curiosity and a thirst for knowledge, I've embarked on a quest to continuously learn and grow. My background in public relations and economics has equipped me with valuable skills, allowing me to tackle challenges head-on and pursue my dreams with determination.
                     
+
                     
                     I'm excited to connect with like-minded individuals, share experiences, and embark on new adventures together. So, let's dive in and explore the possibilities!</p>
 
@@ -145,9 +146,31 @@
 
 </script>
 
+<script>
+    function openmenu() {
+        document.getElementById("sidemenu").style.width = "250px";
+    }
+
+    function closemenu() {
+        document.getElementById("sidemenu").style.width = "0";
+    }
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
 </script>
 
-</script> </document.getElementbyId>
+
 </body>
 </html>
 
