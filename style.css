@@ -272,6 +272,10 @@ form btn2{
     margin-top: 20px;
 }
 /*--------css for small screens------*/
+nav .fas{
+    display: none;
+}
+
 @media only screen and (max-width: 600px){
     .header-text{
         margin-top: 100%;
@@ -279,5 +283,30 @@ form btn2{
     }
     .header-text h1{
         font-size: 30px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #f7d5d7;
+        position: fixed;
+        top: 0;
+        right: -200;
+        width: 200 px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25 px;
+    }
+    nav ul .fas{
+        position: absolute; 
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
     }
 }
