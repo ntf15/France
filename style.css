@@ -29,6 +29,7 @@ body{
 h1{
     font-family: Quicksand;
 }
+
 .container {
     max-width: 60ch; 
     margin: 0 auto; 
@@ -44,6 +45,17 @@ nav {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+#navbar {
+    /* Common styles for both desktop and mobile */
+    background-color: #333;
+    z-index: 1000; /* Adjust as needed */
+
+    /* Mobile-specific styles */
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 
 .sidenav {
     height: 100%;
@@ -132,6 +144,8 @@ nav ul li a:hover::after {
 .about-col-1 img{
     width:100%;
     border-radius: 15px;
+    height: 300px;
+    object-fit: cover;
 }
 .about-col-2{
     flex-basis: 60%;
@@ -322,7 +336,14 @@ form btn2{
 nav .fa-regular{
     display: none;
 }
-
+@media (max-width: 768px) {
+    #navbar {
+        width: 60px;
+        height: 60px; 
+        position:fixed;
+        display: none;
+    }
+}
 @media only screen and (max-width: 600px){
     .header-text{
         margin-top: 100%;
