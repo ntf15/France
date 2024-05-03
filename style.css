@@ -19,6 +19,13 @@ body {
     background-size: cover;
     background-position: center;
 }
+.header.text h1 {
+    font-size: 24px; 
+}
+.header.text h1 {
+    font-size: 24px;
+    line-height: 1.5; 
+}
 
 .container {
     padding: 10px 10%;
@@ -87,17 +94,16 @@ nav ul li a::after{
 nav ul li a:hover::after{
     width: 100%;
 }
-
-.header-text{
-    margin-top: 20%;
-    font-size: 30px;
-}
-.header-text h1{
-    font-size: 100px;
-    margin-top: 20px;
-}
 .header-text h1 span{
     color:#f7d5d7
+}
+.header.text {
+    margin-top: 50%; 
+    font-size: 20px; 
+    text-align: center; 
+}
+.header.text h1 {
+    font-size: 38px; 
 }
 /*-----------about----------*/
 #about{
